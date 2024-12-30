@@ -1,2 +1,210 @@
 @import "./reset.css";
 
+:root {
+    --3xs: 1px;
+    --2xs: 2px;
+    --xs: 4px;
+    --s: 8px;
+    --m: 12px;
+    --l: 16px;
+    --xl: 20px;
+    --2xl: 24px;
+    --3xl: 28px;
+
+    --color-text: hsl(222deg 22% 5%);
+    --color-bg: hsl(0deg 0% 100%);
+    --color-bg-darker: hsl(204, 60%, 95%);
+    --color-primary: hsl(245deg 100% 60%);
+    --font-weight-bold: 600;
+}
+
+html {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    background: var(--color-bg);
+    color: var(--color-text);
+}
+
+article {
+    margin: 0 auto;
+    max-width: 960px;
+    padding: var(--3xl);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: var(--3xl);
+    background-color: hsl(0deg, 0%, 100%, 0.125);
+    backdrop-filter: blur(24px);
+    /* add glass effect: https://www.joshwcomeau.com/css/backdrop-filter/ */
+}
+
+header h1 {
+    font-size: calc(18 / 16 * 1rem);
+    margin-right: auto;
+}
+
+.primary {
+    color: var(--color-primary);
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    gap: var(--3xl);
+}
+
+header li {
+    list-style-type: none;
+}
+
+header a {
+    color: var(--color-text);
+}
+
+header a:not(:hover) {
+    text-decoration: none;
+}
+
+.banner {
+    --border-width: 3px;
+    background: hsl(213deg 80% 95%);
+    border-left: var(--border-width) solid var(--color-primary);
+    padding: var(--l);
+    padding-left: calc(var(--3xl) - var(--border-width));
+    padding-bottom: var(--2xl);
+    margin-top: 32px;
+    margin-bottom: 64px;
+    margin-inline: calc(var(--3xl) * -1);
+}
+
+.banner-title {
+    font-size: calc(18 / 16 * 1rem);
+    font-weight: var(--font-weight-bold);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--3xl);
+    padding-top: 32px;
+    padding-bottom: 64px;
+    padding-inline: var(--3xl);
+    margin-top: 32px;
+    margin-bottom: 64px;
+    margin-inline: calc(var(--3xl) * -1);
+    position: relative;
+}
+
+.cards::before {
+    content: "";
+    background: var(--color-bg-darker);
+    width: 100vw;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+}
+
+@media (max-width: 48rem) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+.card {
+    --color-shadow: 204deg 19% 67%;
+    padding: var(--3xl);
+    background-color: var(--color-bg);
+    box-shadow: .3px .5px .7px hsl(var(--color-shadow) / .28), .8px 1.6px 2px -.8px hsl(var(--color-shadow) / .28), 1.9px 3.8px 4.8px -1.6px hsl(var(--color-shadow) / .29), 4.5px 9.1px 11.6px -2.4px hsl(var(--color-shadow) / .3);
+    display: flex;
+    flex-direction: column;
+    gap: var(--l);
+    border-radius: 4px;
+}
+
+.card> :last-child {
+    margin-top: auto;
+}
+
+.card .card-title {
+    font-size: calc(20 / 16 * 1rem);
+    font-weight: var(--font-weight-bold);
+}
+
+.card .cta {
+    display: block;
+    color: var(--color-text);
+    text-decoration: none;
+    font-weight: var(--font-weight-bold);
+    font-size: calc(15 / 16 * 1rem);
+}
+
+footer {
+    background: var(--color-bg-darker);
+    margin-top: var(--3xl);
+    font-size: 0.75rem;
+    padding: var(--3xl);
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    gap: var(--3xl);
+}
+
+footer li {
+    list-style-type: none;
+}
+
+footer a {
+    color: var(--color-text);
+}
+
+footer a:not(:hover) {
+    text-decoration: none;
+}
+
+.events li {
+    list-style-type: disc;
+}
+
+section {
+    margin-block: 64px;
+}
+
+table {
+    font-size: calc(14 / 16 * 1rem);
+    margin: 32px auto;
+}
+
+table,
+th,
+td {
+    border-collapse: collapse;
+}
+
+table th {
+    text-align: left;
+    border-bottom: 1px solid black;
+}
+
+table td,
+table th {
+    padding: 2px 16px;
+}
+
+article ul,
+article ol {
+    margin-block: 32px;
+}
