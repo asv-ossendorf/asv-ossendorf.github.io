@@ -1,70 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de-DE">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Angelsportverein Ossendorf e.V.</title>
 
-  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/hook.png" />
 </head>
 
 <body>
   <header>
-    <h1>Angelsportverein Ossendorf <span class="primary">e.V.</span></h1>
+    <a href="/">
+      <h1>Angelsportverein Ossendorf <span class="primary">e.V.</span></h1>
+    </a>
     <nav>
       <ul>
-        <li><a href="/kontakt.html">Kontakt</a></li>
+        <li><a href="/verein.html">Über uns</a></li>
       </ul>
     </nav>
   </header>
 
-  <article>
-    <p>Preti Heil und Willkommen auf der Seite des Angelverein Ossendorf e.V. 1996. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta asperiores, beatae molestiae, explicabo quas velit vel quia dolor qui soluta doloremque minus vero quaerat assumenda in fugiat itaque placeat id.</p>
-
-    <div class="cards">
-      <div class="card">
-        <div class="card-title">Mitglied werden</div>
-        <p>Hier steht der Mitgliedsantrag zum Download bereit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet</p>
-        <a class="cta" href="/mitgliedschaft.html">Mehr erfahren</a>
-      </div>
-
-      <div class="card">
-        <div class="card-title">Gastangeln</div>
-        <p>Tages- und Jahresscheine können erworben werden. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet</p>
-        <a class="cta" href="/gastangeln.html">Mehr erfahren</a>
+  <div class="masthead">
+    <div class="masthead-gradient">
+      <div class="center padded">
+        <div class="masthead-title">Petri Heil!</div>
+        <div class="masthead-content">Willkommen auf der Seite des Angelverein Ossendorf e.V. 1996. Lorem ipsum dolor
+          sit
+          amet
+          consectetur adipisicing elit. Dicta asperiores, beatae molestiae, explicabo quas velit vel quia dolor qui
+          soluta
+          doloremque minus vero quaerat assumenda in fugiat itaque placeat id.</div>
       </div>
     </div>
+  </div>
+
+  <article class="center padded">
+    <section>
+      <div class="banner">
+        <div class="banner-title">Whatsapp?</div>
+        Ab sofort gibt es eine Info-Gruppe des Anglervereins.
+      </div>
+    </section>
 
     <section>
+      <div id="vereinstermine" class="scroll-to-target"></div>
+
       <h2>Vereinstermine</h2>
 
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo est aut velit ipsam hic molestiae natus minima voluptatum, inventore tenetur sint soluta voluptates, fuga explicabo autem quia placeat vel in.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo est aut velit ipsam hic molestiae natus minima
+        voluptatum, inventore tenetur sint soluta voluptates, fuga explicabo autem quia placeat vel in.</p>
 
       <ol class="events">
         <li><strong>01.04.2025</strong>: Angelstart Diemel</li>
         <li><strong>10.05.2025</strong>: Anangeln Spitze</li>
         <li><strong>14.06.2025</strong>: Mühlengrabenangeln</li>
-        <li><strong>19.07.2025, 06:00 Uhr</strong>: Hardehausen</li>
+        <li><strong>19.07.2025, 06:00 Uhr</strong>: Teichangeln Hardehausen</li>
         <li><strong>01.08.2025</strong>: Aalangeln</li>
         <li><strong>21.11.2025</strong>: Generalversammlung</li>
       </ol>
     </section>
 
-    <div class="banner">
-      <div class="banner-title">Whatsapp?</div>
-      Ab sofort gibt es eine Info-Gruppe des Anglervereins.
-    </div>
+    <section>
+      <div class="cards">
+        <div class="card">
+          <div class="card-title">Gastangeln</div>
+          <p>Tages- und Jahresscheine können erworben werden. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet</p>
+          <a class="cta" href="#gastangeln">Mehr erfahren</a>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Mitglied werden</div>
+          <p>Hier steht der Mitgliedsantrag zum Download bereit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet
+          </p>
+          <a class="cta" href="#mitgliedschaft">Mehr erfahren</a>
+        </div>
+      </div>
+    </section>
 
     <section>
       <h2>Vereinsgewässer</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo est aut velit ipsam hic molestiae natus minima voluptatum, inventore tenetur sint soluta voluptates, fuga explicabo autem quia placeat vel in.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo est aut velit ipsam hic molestiae natus minima
+        voluptatum, inventore tenetur sint soluta voluptates, fuga explicabo autem quia placeat vel in.</p>
+
+      <div class="images">
+        <div class="image">
+          <img src="assets/diemel.jpeg" alt="TODO" />
+          <p>Diemel</p>
+        </div>
+
+        <div class="image">
+          <img src="assets/graben.jpeg" alt="TODO" />
+          <p>Mühlgraben</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div id="gastangeln" class="scroll-to-target"></div>
+      <h2>Gastangeln</h2>
+      <p>
+        Zwischen dem 01.04 und 20.10 können Gastangler eine Angelerlaubnis in Form von Tagesscheinen oder
+        Jahresscheinen erwerben. Die Erlaubnis gilt nur in Verbindung mit gültigem Jahresfischereischein und
+        Fischereiprüfungszeugnis.
+      </p>
+      <p>
+        <strong>Gebühren:</strong> Tagesschein 10€, Jahresschein 100€
+        <br />
+        <strong>Ausgabestelle:</strong> TODO
+        <br />
+        <strong>Öffnungszeiten:</strong> TODO
+      </p>
+    </section>
+
+    <section>
+      <div id="mitgliedschaft" class="scroll-to-target"></div>
+      <h2>Mitgliedschaft</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo est aut velit ipsam hic molestiae natus minima
+        voluptatum, inventore tenetur sint soluta voluptates, fuga explicabo autem quia placeat vel in.</p>
     </section>
 
     <section>
       <h2>Schonzeiten</h2>
-      <p>In Nordrhein-Westfalen dürfen die folgenden Fischarten außerhalb der Schonzeit gefischt werden, solange die
-        Mindesmaße erfüllt sind.
+      <p>In Nordrhein-Westfalen dürfen die folgenden Fischarten unter Berücksichtigung der Mindestmaße und Schonzeiten
+        gefischt werden.
       </p>
 
       <table>
@@ -157,8 +217,9 @@
   </article>
 
   <footer>
-    <nav>
+    <nav class="center">
       <ul>
+        <li><a href="/verein.html">Kontakt</a></li>
         <li><a href="/impressum.html">Impressum</a></li>
         <li><a href="/datenschutz.html">Datenschutz</a></li>
       </ul>
