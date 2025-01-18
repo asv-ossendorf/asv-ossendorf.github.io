@@ -25,14 +25,15 @@
   --font-weight-bold: 600;
 
   --content-width: 780px;
-  --header-height: 80px;
-  --footer-height: 60px;
+  --header-height: 75px;
+  --footer-height: 50px;
 }
 
 html,
 body {
   min-height: 100%;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
+  /* TODO fix horizontal scroll issue on Windows */
 }
 
 html {
@@ -53,6 +54,7 @@ header {
   right: 0;
   width: 100%;
   height: var(--header-height);
+  gap: var(--3xl);
   padding-inline: var(--3xl);
   align-items: center;
   background-color: hsl(0deg, 0%, 100%, 0.65);
@@ -111,8 +113,7 @@ header a:not(:hover) {
   font-weight: var(--font-weight-bold);
 }
 
-.masthead-content {
-}
+.masthead-content {}
 
 .no-wrap {
   white-space: nowrap;
@@ -189,7 +190,7 @@ header a:not(:hover) {
     4.5px 9.1px 11.6px -2.4px hsl(var(--color-shadow) / 0.3);
 }
 
-.card > :last-child {
+.card> :last-child {
   margin-top: auto;
 }
 
@@ -346,7 +347,8 @@ article h4 {
 }
 
 .image p {
-  padding: var(--2xl);
+  padding: var(--3xl);
+  margin: 0 !important;
 }
 
 p,
