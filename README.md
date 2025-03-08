@@ -6,6 +6,8 @@ python -m http.server
 
 ## To do
 
-- mitgliedsantrag verlinken
-- DNS umbiegen
-- hostingprovider anschreiben: paket canceln, nur domain behalten
+- [ ] bild header austauschen
+- [ ] bild mühlengraben austauschen
+- [ ] bild diemel austauschen
+- [ ] DNS umbiegen
+- [ ] hostingprovider anschreiben: paket canceln, nur domain behalten
